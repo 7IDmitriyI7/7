@@ -1,0 +1,22 @@
+using System;
+
+namespace _7._1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите  градусную меру угла 0<А<360");
+            double a = Convert.ToDouble(Console.ReadLine());
+            if(a>0 && a < 360)
+            {
+                double rad = Math.PI * a / 180;
+                Console.WriteLine("Угол  имеет  " + rad + "  радиан");
+            }
+            else
+            {
+                Console.WriteLine("Неверный ввод");
+            }
+        }
+    }
+}
