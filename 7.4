@@ -1,0 +1,22 @@
+using System;
+
+namespace _7._4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите скорость первого авто");
+            double v1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите скорость второго авто");
+            double v2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите расстояние между авто в км");
+            double s = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите время отдаления авто в часах");
+            double t = Convert.ToDouble(Console.ReadLine());
+            v1 = v1 + v2;
+            s = s + v1 * t;
+            Console.WriteLine("Расстояние = "+s);
+        }
+    }
+}
