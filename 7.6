@@ -1,0 +1,30 @@
+using System;
+
+namespace _7._6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите A1");
+            double a1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите B1");
+            double b1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите C1");
+            double c1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Введите A2");
+            double a2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите B2");
+            double b2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите C2");
+            double c2 = Convert.ToDouble(Console.ReadLine());
+
+            double d = a1 * b2 - a2 * b1;
+            double x = (c1 * b2 - c2 * b1) / d;
+            double y = (a1 * c2 - a2 * c1) / d;
+            Console.WriteLine("x= " + x);
+            Console.WriteLine("y= " + y);
+        }
+    }
+}
