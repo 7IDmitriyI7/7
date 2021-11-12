@@ -1,0 +1,23 @@
+using System;
+
+namespace _7._5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите A");
+            double a = Convert.ToDouble(Console.ReadLine());
+            if (a != 0)
+            {
+                Console.WriteLine("Введите B");
+                double b = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Ответ: " + (-b / a));
+            }
+            else
+            {
+                Console.WriteLine("Ошибка");
+            }
+        }
+    }
+}
